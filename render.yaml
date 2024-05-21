@@ -1,8 +1,9 @@
 services:
   - type: web
-    name: srcbot
+    name: forward-restricted-content-bot
     env: docker
     plan: free
+    startCommand: "python app.py"
     repo: https://github.com/9yaskhan/ForwardRestrictedContentBot
     dockerfilePath: ./Dockerfile
     envVars:
