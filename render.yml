@@ -1,8 +1,9 @@
 services:
-  - type: web
+  - type: worker
     name: srcbot
     env: docker
     plan: free
+    repo: https://github.com/9yaskhan/ForwardRestrictedContentBot
     dockerfilePath: ./Dockerfile
     envVars:
       - key: API_ID
