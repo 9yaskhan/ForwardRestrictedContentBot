@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: srcbot
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: API_ID
+        value: 23222664
+      - key: API_HASH
+        value: 2eabf8148aff470fb7ca59875009d7e4
+      - key: BOT_TOKEN
+        value: 7122920071:AAEPHGSw8lHEsm6YdDkU1iTbSvSBK7ZAMfY
+      - key: SESSION
+        value: BQGqa00Ad0R-KIHmvF5bwzMC4TNjXi9bY06mZjoR64aUt_OjWLic_s9jc4exHLPYyUPwsW9wdMZ83cXSUyBeDWHdlRFUL5xrQS4g7pqRjtOude0BiJvKtEyaFDbsgJapncVnaPBubUjQmVKovuMcbkfcNPOYObni9To-vt_0qf6FODz8csdRdqsim-nCBHSIUIbIse8BUxHAIBFJj9ZTD-c_ImWGIa70TbIfRK01NYAyu9R_IGVkeUr0N6Ady3rjdw8KiRh4flxU13cS7EGcOftJ03KWgidGfqJf8y197YYUObkJ4DKy_EckpTUztzpmB8lbQQdSEJRquGOFTbcliiK3kG3ExwAAAAFQKyumAA
+      - key: AUTH
+        value: 5639973798
+      - key: FORCESUB
+        value: SubForUse
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash bash.sh"
