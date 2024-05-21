@@ -19,4 +19,3 @@ services:
       - key: FORCESUB
         value: SubForUse
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "bash bash.sh"
